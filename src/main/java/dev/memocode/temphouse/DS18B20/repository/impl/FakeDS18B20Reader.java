@@ -2,9 +2,11 @@ package dev.memocode.temphouse.DS18B20.repository.impl;
 
 import dev.memocode.temphouse.DS18B20.repository.DS18B20Reader;
 import dev.memocode.temphouse.DS18B20.repository.TemperatureUtils;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Profile("local")
 public class FakeDS18B20Reader implements DS18B20Reader {
 
     private Double lastTemperature = null;
