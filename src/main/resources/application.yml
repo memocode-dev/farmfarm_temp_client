@@ -1,3 +1,6 @@
+spring:
+  profiles:
+    active: local
 custom:
   DS18B20-1:
     deviceId: 28-030894976706
