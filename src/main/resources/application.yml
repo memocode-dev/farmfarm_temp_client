@@ -3,4 +3,4 @@ spring:
     active: local
 custom:
   DS18B20-1:
-    deviceId: 28-030894976706
+    deviceId: ${DS18B20_DEVICE_ID}
